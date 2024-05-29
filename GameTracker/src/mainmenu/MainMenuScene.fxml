@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainmenuscenes.MainMenuController">
+   <children>
+      <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="14.0" text="PLACEHOLDER" />
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="6.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#logoutButtonHandler" text="Logout" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="20.0" layoutY="45.0" spacing="5.0">
+         <children>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#currentlyPlayingButtonHandler" text="Currently Playing List" />
+                  <Button mnemonicParsing="false" onAction="#previouslyPlayedButtonHandler" text="Previously Played List" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#wishlistButtonHandler" text="Wishlist" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
